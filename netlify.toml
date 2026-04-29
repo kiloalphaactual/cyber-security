@@ -3,5 +3,11 @@
   publish = "site"
 
 [[edge_functions]]
-  path = "/*"      # This means "Protect EVERYTHING"
-  function = "auth" # This MUST match the name of your file (auth.js)
+  path = "/*"
+  function = "auth"
+
+# This ensures that even if a page is missing, it stays behind the password
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

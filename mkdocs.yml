@@ -1,10 +1,18 @@
 site_name: KiloAlpha Security Lab
+site_url: https://kiloalphaactual.netlify.app/
+
 theme:
   name: material
   palette:
     scheme: slate
     primary: deep orange
+  features:
+    - navigation.tabs
+    - search.suggest
 
 nav:
-  - Home: index.md # This MUST match docs/index.md
+  - Home: index.md
   - Networking: certs/network-plus.md
+
+# This fixes the "404 on refresh" issue on many static hosts
+use_directory_urls: true
