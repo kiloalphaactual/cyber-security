@@ -3,6 +3,8 @@ theme:
   name: material
   palette:
     scheme: slate
-    primary: deep orange # High-visibility for security accents
-plugins:
-  - search # Built-in search for your notes
+    primary: deep orange
+
+nav:
+  - Home: index.md # This MUST match docs/index.md
+  - Networking: certs/network-plus.md
