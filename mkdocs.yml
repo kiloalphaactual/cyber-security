@@ -1,7 +1,8 @@
 site_name: KiloAlpha Security Lab
-docs_dir: docs # This tells the brain to look in your vault folder
-
-nav:
-  - Home: index.md
-  - Networking: certs/network-plus.md
-  - Python: labs/python-tools.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep orange # High-visibility for security accents
+plugins:
+  - search # Built-in search for your notes
