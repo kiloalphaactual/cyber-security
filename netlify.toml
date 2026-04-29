@@ -1,0 +1,7 @@
+[[edge_functions]]
+  path = "/*"
+  function = "auth"
+
+[build]
+  command = "mkdocs build"
+  publish = "site"
