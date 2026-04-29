@@ -3,5 +3,5 @@
   publish = "site"
 
 [[edge_functions]]
-  path = "/*"
-  function = "auth"
+  path = "/*"      # This means "Protect EVERYTHING"
+  function = "auth" # This MUST match the name of your file (auth.js)
